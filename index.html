@@ -26,6 +26,8 @@
                         clifford: '#da373d',
                         'pet-primary-color': '#FFDC26',
                         'pet-primary-color-light': '#F9DF8A',
+                        'pet-navbar-color': '#FFF9F4',
+                        'pet-text-color': '#111111',
                     }
                 }
             }
@@ -34,6 +36,8 @@
     <style>
         body {
             font-family: 'Sora', sans-serif;
+            color: #111111;
+            ;
         }
 
         .adlam-font {
@@ -44,9 +48,56 @@
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="">
         <!-- Navbar Main Section -->
+        <nav class="bg-pet-navbar-color">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
 
+
+                    <!-- Header Logo -->
+                    <div class="flex items-center gap-2">
+                        <a href="#"><img src="c1-assets/logo-header.png" alt=""></a>
+                        <a class="text-xl text-pet-text-color hidden lg:block">Browse<span
+                                class="text-pet-primary-color">4</span>Pets</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-xl">Find a pet</a></li>
+                        <li><a class="text-xl">Breeds</a></li>
+                        <li><a class="text-xl">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown relative lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="absolute right-5 top-full menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] ml-3 w-52 p-2 shadow">
+                            <li><a class="text-xl">Find a pet</a></li>
+                            <li><a class="text-xl">Breeds</a></li>
+                            <li><a class="text-xl">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-6">
+                        <a href="#" class="inline-block"><i class="fa-solid fa-bell text-2xl"></i></a>
+                        <a href="#" class="inline-block"><i class="fa-solid fa-magnifying-glass text-2xl"></i></a>
+                        <a class="btn text-xl bg-transparent border-amber-300 hover:bg-pet-primary-color">Login</a>
+                        <a
+                            class="btn bg-pet-primary-color text-xl hover:bg-transparent hover:border-amber-300">Register</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </nav>
 
         <!-- Banner Section -->
 
